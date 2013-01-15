@@ -78,7 +78,6 @@ function user_list_science_tab($list, $idSuffix) {
   drupal_add_js(drupal_get_path('module', 'user_list') .'/user_list.js');
   drupal_add_js(drupal_get_path('module', 'visualscience') .'/visualscience.jquery.layout.js');
   drupal_add_js(drupal_get_path('module', 'visualscience') .'/visualscience.js');
-  drupal_add_js(drupal_get_path('module', 'visualscience') .'/visualscience.jquery.dialog-extend.js');
   
   // Adding the css
   drupal_add_css(drupal_get_path('module', 'user_list') .'/user_list.css');
