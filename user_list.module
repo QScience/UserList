@@ -96,7 +96,9 @@ function user_list_science_tab($list, $idSuffix) {
   }
   $output .= '<div class="content">';
   
-  $output .= drupal_render(drupal_get_form('user_list_form_'.$idSuffix, $list, $idSuffix));
+  // must declare a variable: otherwise get error "Strict warning: Only variables should be passed by reference"
+  $form = drupal_get_form('user_list_form_'.$idSuffix, $list, $idSuffix);
+  $output .= drupal_render($form);
   if ($paginated) {
     $output .= theme('pager', array(NULL, $number, $element));
   }
