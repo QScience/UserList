@@ -74,10 +74,10 @@ function user_list_science_tab($list, $idSuffix) {
   drupal_add_library('system', 'ui.dialog');
 	
   // Adding javascripts
-  drupal_add_js('http://livingscience.ethz.ch/livingscience/livingscience/livingscience.nocache.js', 'external');
+  //drupal_add_js('http://livingscience.ethz.ch/livingscience/livingscience/livingscience.nocache.js', 'external');
   drupal_add_js(drupal_get_path('module', 'user_list') .'/user_list.js');
-  drupal_add_js(drupal_get_path('module', 'visualscience') .'/js/visualscience.jquery.layout.js');
-  drupal_add_js(drupal_get_path('module', 'visualscience') .'/js/visualscience.js');
+  //drupal_add_js(drupal_get_path('module', 'visualscience') .'/js/visualscience.jquery.layout.js');
+  //drupal_add_js(drupal_get_path('module', 'visualscience') .'/js/visualscience.js');
   
   // Adding the css
   drupal_add_css(drupal_get_path('module', 'user_list') .'/user_list.css');
